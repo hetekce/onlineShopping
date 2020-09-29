@@ -2,36 +2,49 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:150px; background-color: blue">
-    <a class="navbar-brand" href="#" style="color: #005cbf"><h1>Marselando</h1></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#"><h3>Home</h3><span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="navbar-link" href="#" style="color: #005cbf;"><h1>Marselando</h1></a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"><h3>Angebot</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><h3>Angebot</h3></a>
+                <a class="nav-link" href="#"><h3>Damen</h3></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><h3>Herren</h3></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <h3>Damen</h3>
+                    <h3>Bekleidung</h3>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Bekleidung</a>
-                    <a class="dropdown-item" href="#">Schuhe</a>
+                    <a class="dropdown-item" href="#">T-Shirt</a>
+                    <a class="dropdown-item" href="#">Hemden</a>
+                    <a class="dropdown-item" href="#">Pullover</a>
+                    <a class="dropdown-item" href="#">Jeans</a>
+                    <a class="dropdown-item" href="#">Sweatshirts</a>
+                    <a class="dropdown-item" href="#">Hosen</a>
+                    <a class="dropdown-item" href="#">Jacken</a>
+                    <a class="dropdown-item" href="#">Mantel</a>
 
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <h3>Herren</h3>
+                    <h3>Schuhe</h3>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Bekleidung</a>
-                    <a class="dropdown-item" href="#">Schuhe</a>
+                    <a class="dropdown-item" href="#">Sneaker</a>
+                    <a class="dropdown-item" href="#">Business</a>
+                    <a class="dropdown-item" href="#">Sandalen</a>
+                    <a class="dropdown-item" href="#">Stiefen</a>
+                    <a class="dropdown-item" href="#">Outdoor</a>
+                    <a class="dropdown-item" href="#">Sportschuhe</a>
+
 
                 </div>
             </li>
