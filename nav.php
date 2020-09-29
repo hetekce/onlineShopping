@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="navbar-link" href="#" style="color: #005cbf;"><h1>Marselando</h1></a>
+                <a class="navbar-link" href="#" style="color: #005cbf;  "><h1>Marselando</h1></a>
             </li>
             <li class="nav-item ml-5">
                 <a class="nav-link" href="#"><h3>Angebot</h3></a>
