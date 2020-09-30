@@ -19,7 +19,7 @@ if (isset($_GET['edit'])) {
     $farbe = $row3['farbe'];
     $groesse = $row3['groesse'];
     $name = $row3['Produkt_Name'];
-    $unit_price = $row3['preis'];
+    //$unit_price = $row3['preis'];
     //$stuecke = $row3['anzahl'];
     //$preis = $unit_price * $stuecke;
 
