@@ -19,27 +19,26 @@ if (isset($_GET['edit'])) {
     $stuecke = $row3['anzahl'];
 }
 ?>
-
+<div class="container mt-5">
         <div class="row">
-            <div class="col">
-                <div class="float-left">
+            <div class="col mt-5">
+
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
 
                     <?php
                     /*$stmt = $pdo->query("select * from produkten where produkt_ID = $id");
                     $row = $stmt->fetch();*/
                     echo     "<div class='input-group'><a href='#'>";
-                    echo      "<img align=left style='margin-right:8%'  name='bilder' width=60% height=90% src='".$row3['bilder_path']."' alt=''></a>  </div>";
+                    echo      "<img style='margin-right:8%'  name='bilder' width=60% height=90% src='".$row3['bilder_path']."' alt=''></a>  </div>";
                     ?>
-                </div>
+
             </div>
-            <div class="col">
+            <div class="col mt-5">
                 <form class="form_2" id=form_2 method="post" action="connection.php" >
                     <div class="input-group">
                         <label for="name">Produkt Name: </label>
                         <span name="name" id="name"><?php echo $row3['Produkt_Name']; ?></span>
                     </div>
-
 
                     <div class="input-group">
                         <label for="farbe">Farbe</label>
@@ -47,7 +46,6 @@ if (isset($_GET['edit'])) {
                             <option name="farbe" value="<?php echo $row3['produkt_ID']; ?>"><?php echo $row3['farbe']?></option>
                         </select>
                     </div>
-
 
                     <div class="input-group">
                         <label for="stuecke">Stück</label>
@@ -95,5 +93,5 @@ if (isset($_GET['edit'])) {
             </div>
 
         </div>
-    </div>
+</div>
 <?php include ('footer.php'); ?>
