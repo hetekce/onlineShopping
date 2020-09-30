@@ -20,7 +20,7 @@ if (isset($_GET['edit'])) {
 <tbody>
 <?php
 
-$stmt = $pdo->prepare("select * from produkten where produkt_ID = 1");
+$stmt = $pdo->prepare("select * from produkten where produkt_ID = $Produkt_ID");
 $stmt->execute();
 $row2 = $stmt->fetch();
 echo "<td><a href='einzelprodukt.php?edit=".$row2['produkt_ID']."#form_2' class='edit_btn'>Edit</a></td>";

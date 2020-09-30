@@ -15,7 +15,7 @@ include("nav.php");
     include("Damen.html");
   }
   function Herren() {
-   include("Herren.html");
+   include("herren.html");
   }
   function Kinder() {
     include("Kinder.html");
