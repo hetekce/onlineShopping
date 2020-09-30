@@ -1,4 +1,6 @@
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+require_once "bgcolor.php"?>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:150px; background-color: blue">
@@ -50,6 +52,22 @@
             </li>
 
         </ul>
+        <div class="dropdown mr-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                BG Farbe
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="?colour=grey">Grey</a>
+                <a class="dropdown-item" href="?colour=white">White</a>
+                <a class="dropdown-item" href="?colour=pink">Pink</a>
+                <a class="dropdown-item" href="?colour=blue">Blue</a>
+                <a class="dropdown-item" href="?colour=purple">Purple</a>
+                <a class="dropdown-item" href="?colour=green">Green</a>
+                <a class="dropdown-item" href="?colour=yellow">Yellow</a>
+                <a class="dropdown-item" href="?colour=orange">Orange</a>
+                <a class="dropdown-item" href="?colour=red">Red</a>
+            </div>
+        </div>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Wonach suchen Sie" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
