@@ -1,6 +1,8 @@
 <?php
+
 include("header.php");
-require_once "bgcolor.php"?>
+
+?>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:150px; background-color: blue">
@@ -73,5 +75,4 @@ require_once "bgcolor.php"?>
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
         </form>
     </div>
-</nav>
 </nav>

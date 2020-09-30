@@ -1,6 +1,6 @@
 <?php
 
-require_once "bgcolor.php"
+include ("bgcolor.php");
 
 ?>
 <!doctype html>
@@ -22,3 +22,4 @@ require_once "bgcolor.php"
 
     <title>Marselando</title>
 </head>
+
