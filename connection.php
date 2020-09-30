@@ -21,41 +21,32 @@ catch (PDOException $e){
     echo $e->getMessage();
 }
 
-
 // initialize variables
 $produkt_id = 0;
-$stuecke = "";
+$stuecke = 0;
 $farbe = "";
-$preis = "";
+$preis = 0;
 $user = 1;
 $name = "";
 $bes_group_id = "";
 $m ="";
 
-
-
-
-
-
 if (isset($_POST['save'])) {
+    if(!empty($_POST['stuecke'])) {
+        $stuecke = $_POST['stuecke'];
+    }
     $produkt_id = $_POST['id'];
     $stuecke = $_POST['stuecke'];
-    $preis = $_POST['preis'];
+    $preis = $_POST['preis']*$stuecke;
     $farbe = $_POST['farbe'];
     $name = $_POST['name'];
     $sql1 = "INSERT INTO bestellungen (benutzer_ID, bestellpreis) VALUES (?,?)";
     $pdo->prepare($sql1)->execute([$user, $preis]);
-    $bes_group_id = "select bestellung_ID from bestellungen where bestellung_ID = (select max(bestellung_ID) from bestellungen)";
-    //$m = "select @sum :=max(bestellung_ID) from bestellungen";
-    $stmt = $pdo->prepare($bes_group_id);
-    $stmt->execute();
-    $roww = $stmt->fetch();
+    $last_id = $pdo->LastInsertId();
     $sql = "INSERT INTO transaktionen (produkt_ID, bestellung_group_ID, stuecke, transaction_preis) VALUES (?,?,?,?)";
-    $pdo->prepare($sql)->execute([$produkt_id, $roww, $stuecke, $preis]);
+    $pdo->prepare($sql)->execute([$produkt_id, $last_id, $stuecke, $preis]);
 
-
-
-    //$_SESSION['message'] = "Neue Benutzer wurde hinzugefügt";
+    //$_SESSION['save'] = "Neue Benutzer wurde hinzugefügt";
     header('location: bestelbecome.php');
 }
 
