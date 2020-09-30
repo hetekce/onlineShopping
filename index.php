@@ -33,6 +33,7 @@ include("nav.php");
    if (isset($_GET['Kinder'])) {
     Kinder();
   }
+
    function Alle() {
     include("alle.php");
   }

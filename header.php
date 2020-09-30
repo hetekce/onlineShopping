@@ -17,7 +17,7 @@ include ("bgcolor.php");
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <style type="text/css">
-        body { background-color: <?php echo $colour_session; ?> !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        body { background-color: <?php echo $_SESSION['colour']; ?> !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
     </style>
 
     <title>Marselando</title>
