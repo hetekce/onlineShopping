@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="">
+    <list default="true" id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="neue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einzelprodukt.php" beforeDir="false" afterPath="$PROJECT_DIR$/einzelprodukt.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,6 +63,10 @@
       <option name="presentableId" value="Default" />
       <updated>1601373100843</updated>
       <workItem from="1601373102366" duration="7603000" />
+      <workItem from="1601443418170" duration="3446000" />
+      <workItem from="1601447212600" duration="16152000" />
+      <workItem from="1601464917392" duration="143000" />
+      <workItem from="1601467912575" duration="2779000" />
     </task>
     <servers />
   </component>
@@ -72,19 +83,37 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="428" y="187" key="#CLI_Interpreters" timestamp="1601386946607">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="391" y="135" key="#CLI_Interpreters" timestamp="1601445484204">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="391" y="135" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1601445484204" />
     <state x="428" y="187" key="#CLI_Interpreters/0.0.1680.1050@0.0.1680.1050" timestamp="1601386946607" />
     <state x="508" y="175" key="#PHP" timestamp="1601386950015">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="508" y="175" key="#PHP/0.0.1680.1050@0.0.1680.1050" timestamp="1601386950015" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601444340299">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601444340299" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601445491867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601445491867" />
     <state x="659" y="455" key="NewPhpFileDialog" timestamp="1601387135903">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601387135903" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1601445523459">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601445523459" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1601450726860">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601450726860" />
   </component>
 </project>

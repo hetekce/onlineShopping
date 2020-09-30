@@ -1,9 +1,14 @@
 <?php
 include ("config.php");
+
+
 try {
 
 
     $pdo = new  PDO($dsn,$username,$password);
+
+
+
 
     //  echo "Connected successfully";
 
@@ -17,32 +22,52 @@ catch (PDOException $e){
 }
 
 
-
 // initialize variables
+$produkt_id = 0;
+$stuecke = "";
+$farbe = "";
+$preis = "";
+$user = 1;
 $name = "";
-$dob = "";
-$rolle = "";
-$id = 0;
-$update = false;
+$bes_group_id = "";
+$m ="";
+
+
+
+
+
 
 if (isset($_POST['save'])) {
+    $produkt_id = $_POST['id'];
+    $stuecke = $_POST['stuecke'];
+    $preis = $_POST['preis'];
+    $farbe = $_POST['farbe'];
     $name = $_POST['name'];
-    $dob = $_POST['dob'];
-    $rolle = $_POST['rolle'];
+    $sql1 = "INSERT INTO bestellungen (benutzer_ID, bestellpreis) VALUES (?,?)";
+    $pdo->prepare($sql1)->execute([$user, $preis]);
+    $bes_group_id = "select bestellung_ID from bestellungen where bestellung_ID = (select max(bestellung_ID) from bestellungen)";
+    //$m = "select @sum :=max(bestellung_ID) from bestellungen";
+    $stmt = $pdo->prepare($bes_group_id);
+    $stmt->execute();
+    $roww = $stmt->fetch();
+    $sql = "INSERT INTO transaktionen (produkt_ID, bestellung_group_ID, stuecke, transaction_preis) VALUES (?,?,?,?)";
+    $pdo->prepare($sql)->execute([$produkt_id, $roww, $stuecke, $preis]);
 
-    mysqli_query($db, "INSERT INTO benutzer (Benutzer_Name, DOB, Benutzer_Role_ID) VALUES ('$name', '$dob', '$rolle')");
-    $_SESSION['message'] = "Neue Benutzer wurde hinzugefügt";
-    header('location: benutzer.php');
+
+
+    //$_SESSION['message'] = "Neue Benutzer wurde hinzugefügt";
+    header('location: einzelprodukt.php');
 }
 
 if (isset($_POST['update'])) {
     $id = $_POST['id'];
     $name = $_POST['name'];
     $dob = $_POST['dob'];
-    $rolle = $_POST['rolle'];
-    mysqli_query($db, "UPDATE benutzer SET Benutzer_Name='$name', DOB='$dob', Benutzer_Role_ID='$rolle' WHERE Benutzer_ID=$id");
-    $_SESSION['message'] = "Benutzer Infomationen wurde bearbeitet";
-    header('location: benutzer.php');
+    $farbe = $_POST['farbe'];
+    mysqli_query($pdo, "UPDATE transaktionen SET Anzahl='$stuecke', Preis='$dob', Benutzer_Role_ID='$farbe' WHERE produkt_ID=$produkt_id");
+    //$_SESSION['message'] = "Benutzer Infomationen wurde bearbeitet";
+    header('location: einzelprodukt.php');
 }
+
 
 ?>
