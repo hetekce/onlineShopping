@@ -10,17 +10,22 @@ include("header.php");
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="navbar-link" href="#" style="color: #005cbf;  "><h1>Marselando</h1></a>
+                <a class="navbar-link" href="index.php" style="color: #005cbf;  "><h1>Marselando</h1></a>
             </li>
             <li class="nav-item ml-5">
-                <a class="nav-link" href="#"><h3>Angebot</h3></a>
+                <a class="nav-link" href="#"><h3>Bestellen</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><h3>Damen</h3></a>
+                <a class="nav-link" href='index.php?Damen=true'><h3>Damen</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><h3>Herren</h3></a>
+                <a class="nav-link" href='index.php?Herren=true'><h3>Herren</h3></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href='index.php?Kinder=true'><h3>Kinder</h3></a>
+            </li>
+
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <h3>Bekleidung</h3>

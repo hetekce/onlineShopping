@@ -20,10 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/herren.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/einzelprodukt.php" beforeDir="false" afterPath="$PROJECT_DIR$/einzelprodukt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/herren.html" beforeDir="false" afterPath="$PROJECT_DIR$/herren.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/alle.html" beforeDir="false" afterPath="$PROJECT_DIR$/alle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/damen.html" beforeDir="false" afterPath="$PROJECT_DIR$/damen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/einzelprodukt.php" beforeDir="false" afterPath="$PROJECT_DIR$/einzelprodukt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herren.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kinder.html" beforeDir="false" afterPath="$PROJECT_DIR$/kinder.php" afterDir="false" />
+>>>>>>> 4c1225bc8a9193715c700d8cc47daa78cdc032b5
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +68,11 @@
       <option name="presentableId" value="Default" />
       <updated>1601373100843</updated>
       <workItem from="1601373102366" duration="13622000" />
+<<<<<<< HEAD
       <workItem from="1601466420773" duration="4060000" />
+=======
+      <workItem from="1601466420773" duration="1267000" />
+>>>>>>> 4c1225bc8a9193715c700d8cc47daa78cdc032b5
     </task>
     <servers />
   </component>
@@ -76,6 +91,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="neue dd" />
+    <option name="LAST_COMMIT_MESSAGE" value="neue dd" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="428" y="187" key="#CLI_Interpreters" timestamp="1601386946607">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -89,5 +108,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601387135903" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601471029447">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601471029447" />
   </component>
 </project>

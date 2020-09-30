@@ -12,3 +12,5 @@ $colour_session = $_SESSION['colour'];
 
 ?>
 
+echo "<body style='background-color:pink'>";
+
