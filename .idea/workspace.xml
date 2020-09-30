@@ -19,16 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/herren.php" afterDir="false" />
+    <list default="true" id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="html -php">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a9eac9-3da3-4ac8-ad05-57075532877b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d5a9eac9-3da3-4ac8-ad05-57075532877b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bestelbecome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/suchergebnis2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alle.html" beforeDir="false" afterPath="$PROJECT_DIR$/alle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/damen.html" beforeDir="false" afterPath="$PROJECT_DIR$/damen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/damen.php" beforeDir="false" afterPath="$PROJECT_DIR$/damen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/einzelprodukt.php" beforeDir="false" afterPath="$PROJECT_DIR$/einzelprodukt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herren.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kinder.html" beforeDir="false" afterPath="$PROJECT_DIR$/kinder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kinder.php" beforeDir="false" afterPath="$PROJECT_DIR$/kinder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +52,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\exqua\PhpstormProjects\onlineShopping" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\exqua\PhpstormProjects\onlineShopping" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,6 +77,14 @@
       <workItem from="1601373102366" duration="13622000" />
       <workItem from="1601466420773" duration="1267000" />
     </task>
+    <task id="LOCAL-00001" summary="html -php">
+      <created>1601473224019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601473224019</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,7 +104,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="neue dd" />
-    <option name="LAST_COMMIT_MESSAGE" value="neue dd" />
+    <MESSAGE value="html -php" />
+    <option name="LAST_COMMIT_MESSAGE" value="html -php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="187" key="#CLI_Interpreters" timestamp="1601386946607">
@@ -94,13 +116,37 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="508" y="175" key="#PHP/0.0.1680.1050@0.0.1680.1050" timestamp="1601386950015" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601478843164">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601478843164" />
+    <state width="1302" height="210" key="GridCell.Tab.0.bottom" timestamp="1601479341339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1302" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601479341339" />
+    <state width="1302" height="210" key="GridCell.Tab.0.center" timestamp="1601479341338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1302" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601479341338" />
+    <state width="1302" height="210" key="GridCell.Tab.0.left" timestamp="1601479341338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1302" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601479341338" />
+    <state width="1302" height="210" key="GridCell.Tab.0.right" timestamp="1601479341339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1302" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601479341339" />
+    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1601473267045">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1601473267045" />
     <state x="659" y="455" key="NewPhpFileDialog" timestamp="1601387135903">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601387135903" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601471029447">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601473274038">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601471029447" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601473274038" />
   </component>
 </project>

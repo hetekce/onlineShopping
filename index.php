@@ -36,6 +36,7 @@ include("nav.php");
    function Alle() {
     include("alle.php");
   }
+
 ?>
 
 

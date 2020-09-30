@@ -70,8 +70,8 @@ include("header.php");
                 <a class="dropdown-item" href="?colour=red">Red</a>
             </div>
         </div>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Wonach suchen Sie" aria-label="Search">
+        <form action="suchergebnis2.php" method="get" class="form-inline my-2 my-lg-0">
+            <input name="suchwort" class="form-control mr-sm-2" type="search" placeholder="Wonach suchen Sie" aria-label="Search" required>
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
         </form>
     </div>
