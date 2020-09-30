@@ -17,23 +17,13 @@ if (isset($_GET['edit'])) {
 }
 ?>
 
-<tbody>
-<?php
-
-$stmt = $pdo->prepare("select * from produkten where produkt_ID = 1");
-$stmt->execute();
-$row2 = $stmt->fetch();
-echo "<td><a href='einzelprodukt.php?edit=".$row2['produkt_ID']."#form_2' class='edit_btn'>Edit</a></td>";
-
-?>
-</tbody>
 
 <form class="form_2" id=form_2 method="post" action="connection.php" >
 
     <input type="hidden" name="id" value="<?php echo $id; ?>">
 
     <?php
-    $stmt = $pdo->query("select * from produkten where produkt_ID = 1");
+    $stmt = $pdo->query("select * from produkten where produkt_ID = $id");
     $row = $stmt->fetch();
     echo     "<div class='input-group'><a href='#'>";
     echo      "<img align=left style='margin-right:8%'  name='bilder' width=15% height=40% src='".$row['bilder_path']."' alt=''></a>  </div>";

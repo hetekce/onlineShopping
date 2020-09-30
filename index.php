@@ -12,13 +12,13 @@ include("nav.php");
 <a href='index.php?Kinder=true'>Kinder</a>
 <?php
   function Damen() {
-    include("Damen.html");
+    include("damen.php");
   }
   function Herren() {
-   include("Herren.html");
+   include("herren.php");
   }
   function Kinder() {
-    include("Kinder.html");
+    include("kinder.php");
   }
   if (isset($_GET['Alle'])) {
     Alle();
@@ -34,7 +34,7 @@ include("nav.php");
     Kinder();
   }
    function Alle() {
-    include("Alle.html");
+    include("alle.php");
   }
 ?>
 
