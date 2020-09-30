@@ -1,5 +1,4 @@
 <div class='container'>
-
     <h1 class='font-weight-light text-center text-lg-left mt-4 mb-0'>Kinder</h1>
     <hr class='mt-2 mb-5'>
 
