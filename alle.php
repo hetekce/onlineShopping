@@ -6,9 +6,9 @@
   <div class='row text-center text-lg-left'>
 <?php
 include ('connection.php');
-$stmt = $pdo->query("SELECT `Produkt_Name`,`bilder_path` FROM `produkten`");
+$stmt = $pdo->query("SELECT `Produkt_ID`,`Produkt_Name`,`bilder_path` FROM `produkten`");
 while ($row = $stmt->fetch()) {
-	echo     "<div class='col-lg-3 col-md-4 col-6'><a href='#' class='d-block mb-4 h-100'>";
+	echo     "<div class='col-lg-3 col-md-4 col-6'><a href='einzelprodukt.php?edit=".$row['Produkt_ID']."' class='d-block mb-4 h-100'>";
 		  
       echo      "<img class='img-fluid img-thumbnail' src='".$row['bilder_path']."' alt=''>" .$row['Produkt_Name']." </a>  </div>";
         

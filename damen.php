@@ -3,6 +3,7 @@
     <hr class='mt-2 mb-5'>
 
     <div class='row text-center text-lg-left'>
+
       <?php
       include ('connection.php');
       $stmt = $pdo->query("SELECT `Produkt_ID`, `Produkt_Name`,`bilder_path` FROM `produkten` WHERE `geschlecht` = 'Damen'");
@@ -12,6 +13,3 @@
           echo      "<img class='img-fluid img-thumbnail' src='".$row['bilder_path']."' alt=''></a>  </div>";
 
       }
-
-
-      ?>

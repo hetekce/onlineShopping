@@ -5,7 +5,8 @@ include("nav.php");
 
 ?>
 
-    <div class="container" style="min-height: 500px; margin-left: 50px; margin-top: 50px;">
+
+
 
         <?php
         function Damen() {
@@ -32,7 +33,8 @@ include("nav.php");
             include("alle.php");
         }
         ?>
-    </div>
 
 
-<?php include("footer.php");
+
+
+<?php include("footer.php"); ?>

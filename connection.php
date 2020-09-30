@@ -56,17 +56,23 @@ if (isset($_POST['save'])) {
 
 
     //$_SESSION['message'] = "Neue Benutzer wurde hinzugefügt";
-    header('location: einzelprodukt.php');
+    header('location: bestelbecome.php');
 }
 
 if (isset($_POST['update'])) {
-    $id = $_POST['id'];
+    $produkt_id = $_POST['id'];
     $name = $_POST['name'];
-    $dob = $_POST['dob'];
+    $stuecke = $_POST['stuecke'];
     $farbe = $_POST['farbe'];
-    mysqli_query($pdo, "UPDATE transaktionen SET Anzahl='$stuecke', Preis='$dob', Benutzer_Role_ID='$farbe' WHERE produkt_ID=$produkt_id");
-    //$_SESSION['message'] = "Benutzer Infomationen wurde bearbeitet";
-    header('location: einzelprodukt.php');
+    $preis = $_POST['preis'];
+    $sql2 = "INSERT INTO warenkorb (produkt_ID, bestellpreis, stuecke) VALUES (?,?,?)";
+    $pdo->prepare($sql2)->execute([$produkt_id, $preis, $stuecke]);
+    header('location: index.php');
+}
+
+
+if(isset($_POST['bestellungen'])){
+    $sql3 = "SELECT * From bestellungen  VALUES (?,?,?)";
 }
 
 
