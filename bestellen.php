@@ -4,13 +4,15 @@
 <?php
 if (isset($_GET['del'])) {
 $id = $_GET['del'];
-$stmt2 = $pdo->prepare("DELETE FROM bestellungen WHERE bestellung_ID= ?");
-$stmt2->execute(array($id));
+$stmt3 = $pdo->prepare("Delete from transaktionen where bestellung_group_id=$id");
+$stmt3->execute();
+$stmt2 = $pdo->prepare("DELETE FROM bestellungen WHERE bestellung_ID= $id");
+$stmt2->execute();
 
 //$_SESSION['message'] = "Benutzer wurde entfernt!";
-header('location: index.php');
+header('location: index.php?Bestellungen');
 }
-
+//array($id)
 ?>
 
 <?php /*
@@ -51,7 +53,7 @@ if (isset($_GET['edit'])) {
         <table class="table table-striped text-monospace">
             <caption>BESTELLUNGEN<br><br></caption>
             <thead>
-            <th><label for="select_all_checkbox"></label><input type="checkbox" id="select_all_checkbox" onclick="toggle(this);"></th>
+            <th><label for="select_all_checkbox"></label><input class="form-check-input" type="checkbox" id="select_all_checkbox" onclick="toggle(this);"></th>
             <th>Bestellungesnummer</th>
             <th>ProduktName</th>
             <th>Farbe</th>
@@ -60,7 +62,7 @@ if (isset($_GET['edit'])) {
             <th>Stück</th>
             <th>Gesamtpreis</th>
             <!-- <th>Edit</th> -->
-            <th>Delete</th>
+            <th>Stornieren</th>
             </thead><br>
             <tbody>
             <?php
@@ -87,7 +89,7 @@ if (isset($_GET['edit'])) {
                         echo "<td class='user_list'>" . $row['stuecke'] . "</td>";
                         echo "<td class='user_list'>" . $row['bestellpreis'] . "</td>";
                         //echo "<td class='user_list'><a href='bestellen.php?edit=".$row['bestellung_ID']."#form_2' class='edit_btn'>Edit</a></td>";
-                        echo "<td class='user_list'><a href='bestellen.php?del=".$row['bestellung_ID']."' class='del_btn'>Delete</a></td>";
+                        echo "<td class='user_list'><a href='bestellen.php?del=".$row['bestellung_ID']."' class='btn btn-outline-danger'>Stornieren</a></td>";
                         echo "</tr>";
                     }
                 } else{
@@ -103,8 +105,8 @@ if (isset($_GET['edit'])) {
         </table>
         <table class="control">
             <tr class="del_sel_button">
-                <td><label for="select_all_checkbox"></label><input type="checkbox" id="select_all_checkbox" onclick="toggle(this);">Check All</td>
-                <td class="button"><input type="submit" name="delete" id="delete" value="Delete Selected Records"></td>
+                <td><label for="select_all_checkbox"></label><input class="form-check-input" type="checkbox" id="select_all_checkbox" onclick="toggle(this);">Check All</td>
+                <td class="button"><input type="submit" class="btn btn-outline-danger ml-3" name="delete" id="delete" value="Stornieren Ausgewählte Bestellungen"></td>
             </tr>
         </table>
     </form>
