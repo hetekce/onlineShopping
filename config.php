@@ -2,6 +2,6 @@
 
 $username="root";
 $host="localhost";
-$password="root";
+$password="";
 $database="online_shopping";
 $dsn ="mysql:host=".$host.";dbname=".$database;

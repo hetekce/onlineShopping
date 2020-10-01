@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="alle seite ist auch syncroniziert mit linken">
+    <list default="true" id="f827003e-50ec-4f72-ba1f-7e2b10cb095d" name="Default Changelist" comment="jetzt kann man die orders gleichzeitig an 2 tabellen speichern, nachdem die Bestellung aufgegeben wird">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/einzelprodukt.php" beforeDir="false" afterPath="$PROJECT_DIR$/einzelprodukt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="474f8249-059b-4030-812d-768046135b24" name="Default Changelist" comment="" />
+      <changelist id="f827003e-50ec-4f72-ba1f-7e2b10cb095d" name="Default Changelist" comment="jetzt kann man die orders gleichzeitig an 2 tabellen speichern, nachdem die Bestellung aufgegeben wird" />
       <created>1601373100843</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -68,6 +67,7 @@
       <workItem from="1601466420773" duration="1267000" />
       <workItem from="1601486996721" duration="1347000" />
       <workItem from="1601488366113" duration="11533000" />
+      <workItem from="1601536287320" duration="546000" />
     </task>
     <task id="LOCAL-00001" summary="html -php">
       <created>1601473224019</created>
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601493657321</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jetzt kann man die orders gleichzeitig an 2 tabellen speichern, nachdem die Bestellung aufgegeben wird">
+      <created>1601500848031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601500848031</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +128,8 @@
     <MESSAGE value="latest version" />
     <MESSAGE value="bgcolor fehler korrigiert wurde" />
     <MESSAGE value="alle seite ist auch syncroniziert mit linken" />
-    <option name="LAST_COMMIT_MESSAGE" value="alle seite ist auch syncroniziert mit linken" />
+    <MESSAGE value="jetzt kann man die orders gleichzeitig an 2 tabellen speichern, nachdem die Bestellung aufgegeben wird" />
+    <option name="LAST_COMMIT_MESSAGE" value="jetzt kann man die orders gleichzeitig an 2 tabellen speichern, nachdem die Bestellung aufgegeben wird" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="187" key="#CLI_Interpreters" timestamp="1601386946607">
@@ -140,33 +148,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601495921154" />
-    <state width="1302" height="210" key="GridCell.Tab.0.bottom" timestamp="1601495585064">
+    <state width="1302" height="171" key="GridCell.Tab.0.bottom" timestamp="1601536288291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1302" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601495585064" />
-    <state width="1302" height="210" key="GridCell.Tab.0.center" timestamp="1601495585064">
+    <state width="1302" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601536288291" />
+    <state width="1302" height="171" key="GridCell.Tab.0.center" timestamp="1601536288291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1302" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601495585064" />
-    <state width="1302" height="210" key="GridCell.Tab.0.left" timestamp="1601495585063">
+    <state width="1302" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601536288291" />
+    <state width="1302" height="171" key="GridCell.Tab.0.left" timestamp="1601536288290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1302" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601495585063" />
-    <state width="1302" height="210" key="GridCell.Tab.0.right" timestamp="1601495585064">
+    <state width="1302" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601536288290" />
+    <state width="1302" height="171" key="GridCell.Tab.0.right" timestamp="1601536288291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1302" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601495585064" />
-    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1601473267045">
+    <state width="1302" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601536288291" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1601501746482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1601473267045" />
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1601501746482" />
+    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1601501752533">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1601501752533" />
     <state x="659" y="455" key="NewPhpFileDialog" timestamp="1601387135903">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601387135903" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601493666533">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1601536458825">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601493666533" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601536458825" />
   </component>
 </project>
