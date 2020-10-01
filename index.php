@@ -21,6 +21,9 @@ include("nav.php");
     function Bestellungen(){
         include("bestellen.php");
     }
+    function Bestellbecome(){
+        include ("bestelbecome.php");
+    }
 
     if (isset($_GET['Damen'])) {
         Damen();
@@ -33,6 +36,9 @@ include("nav.php");
     }
     if(isset($_GET['Bestellungen'])){
         Bestellungen();
+    }
+    if(isset($_GET['save'])){
+        Bestellbecome();
     }
     function Alle() {
         include("alle.php");
