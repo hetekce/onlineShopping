@@ -47,7 +47,7 @@ if (isset($_POST['save'])) {
     $pdo->prepare($sql)->execute([$produkt_id, $last_id, $stuecke, $preis]);
 
     //$_SESSION['save'] = "Neue Benutzer wurde hinzugefügt";
-    header('location: bestelbecome.php');
+    header('location: index.php?save');
 }
 
 if (isset($_POST['update'])) {
@@ -62,8 +62,16 @@ if (isset($_POST['update'])) {
 }
 
 
-if(isset($_POST['bestellungen'])){
-    $sql3 = "SELECT * From bestellungen  VALUES (?,?,?)";
+if (isset($_POST['delete'])) {
+    $itemID = $_POST['checkbox'];
+    foreach ($itemID as $id) {
+        $stmt3 = $pdo->prepare("Delete from transaktionen where bestellung_group_id=" . $id);
+        $stmt3->execute();
+        $stmt2 = $pdo->prepare("DELETE FROM bestellungen WHERE bestellung_ID=" . $id);
+        $stmt2->execute();
+    }
+//$_SESSION['message'] = "Ausgewählte Benutzer wurde entfernt!";
+    header("location: index.php?Bestellungen");
 }
 
 
