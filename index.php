@@ -18,6 +18,9 @@ include("nav.php");
     function Kinder() {
         include("kinder.php");
     }
+    function Bestellungen(){
+        include("bestellen.php");
+    }
 
     if (isset($_GET['Damen'])) {
         Damen();
@@ -27,6 +30,9 @@ include("nav.php");
     }
     if (isset($_GET['Kinder'])) {
         Kinder();
+    }
+    if(isset($_GET['Bestellungen'])){
+        Bestellungen();
     }
     function Alle() {
         include("alle.php");

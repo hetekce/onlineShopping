@@ -1,20 +1,112 @@
-<?php include("nav.php"); ?>
+<?php include "connection.php"; ?>
+
+
+<?php
+if (isset($_GET['del'])) {
+$id = $_GET['del'];
+$stmt2 = $pdo->prepare("DELETE FROM bestellungen WHERE bestellung_ID= ?");
+$stmt2->execute(array($id));
+
+//$_SESSION['message'] = "Benutzer wurde entfernt!";
+header('location: index.php');
+}
+
+?>
+
+<?php /*
+if (isset($_GET['edit'])) {
+    $id = $_GET['edit'];
+    $update = true;
+    $query = "SELECT Benutzer_ID, Benutzer_Name, DOB, Benutzer_Role_ID FROM bestellungen WHERE Benutzer_ID=$id";
+    $record = mysqli_query($db, $query);
+
+    //if (count($record) == 1 ) {
+    $n = mysqli_fetch_array($record);
+    $name = $n['Benutzer_Name'];
+    $dob = $n['DOB'];
+    $rolle = $n['Benutzer_Role_ID'];
+    //}
+}*/
+?>
+
+
+<script>
+    function toggle(source) {
+        //var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const checkboxes = document.querySelectorAll(".user_list1");
+        for (let i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i] !== source)
+                checkboxes[i].checked = source.checked;
+        }
+    }
+</script>
 
 <div style="height:600px;">
-    <div style="float:left; margin-right: 30px;">
-        <img src="tshirt1.jpg" class="img-fluid" alt="Responsive image" style="width:500px; height:500px; margin-left:500px; ">
-    </div>
-    <div style="margin-top: 200px; padding-top: 120px;">
-        <ul style="list-style: none">
-            <li><h3> Produkt: Tshirt</h3></li>
-            <li> <h3>Marke:   Atlethichs</h3></li>
-            <li> <h3>Preis:   15$</h3></li>
-            <li><button type="button" class="btn btn-primary btn-lg">Kaufen</button></li>
-        </ul>
-
+    <div>
+        <h2>Bestellungen</h2>
     </div>
 
+    <div>
+    <form method="post" action="connection.php">
+        <table class="benutzer">
+            <caption>BESTELLUNGEN<br><br></caption>
+            <thead>
+            <th><label for="select_all_checkbox"></label><input type="checkbox" id="select_all_checkbox" onclick="toggle(this);"></th>
+            <th>Bestellungesnummer</th>
+            <th>ProduktName</th>
+            <th>Farbe</th>
+            <th>Größe</th>
+            <th>Einzelpreis</th>
+            <th>Stück</th>
+            <th>Gesamtpreis</th>
+            <!-- <th>Edit</th> -->
+            <th>Delete</th>
+            </thead><br>
+            <tbody>
+            <?php
+
+            // Attempt select query execution
+
+            $stmt = $pdo->prepare("select b.bestellung_ID , p.Produkt_Name, p.farbe, p.groesse, p.bilder_path,
+                p.preis as Unit_Price, t.stuecke, b.bestellpreis from bestellungen b 
+                JOIN transaktionen t on b.bestellung_ID = t.bestellung_group_id
+                JOIN produkten p on t.produkt_ID = p.produkt_ID");
+
+            $stmt->execute();
+
+            if($row = $stmt->fetch()){
+                if($row > 0){
+                    while($row = $stmt->fetch()){
+                        echo "<tr class='rows'>";
+                        echo "<td class='user_list'><input class='user_list1' type='checkbox' name='checkbox[]' value='".$row['bestellung_ID']."'></td>";
+                        echo "<td class='user_list'>" . $row['bestellung_ID'] . "</td>";
+                        echo "<td class='user_list'>" . $row['Produkt_Name'] . "</td>";
+                        echo "<td class='user_list'>" . $row['farbe'] . "</td>";
+                        echo "<td class='user_list'>" . $row['groesse'] . "</td>";
+                        echo "<td class='user_list'>" . $row['Unit_Price'] . "</td>";
+                        echo "<td class='user_list'>" . $row['stuecke'] . "</td>";
+                        echo "<td class='user_list'>" . $row['bestellpreis'] . "</td>";
+                        //echo "<td class='user_list'><a href='bestellen.php?edit=".$row['bestellung_ID']."#form_2' class='edit_btn'>Edit</a></td>";
+                        echo "<td class='user_list'><a href='bestellen.php?del=".$row['bestellung_ID']."' class='del_btn'>Delete</a></td>";
+                        echo "</tr>";
+                    }
+                } else{
+                    echo "No records matching your query were found.";
+                }
+            } else{
+                echo "ERROR: Could not able to execute. ";
+            }
+
+            ?>
+
+            </tbody>
+        </table>
+        <table class="control">
+            <tr class="del_sel_button">
+                <td><label for="select_all_checkbox"></label><input type="checkbox" id="select_all_checkbox" onclick="toggle(this);">Check All</td>
+                <td class="button"><input type="submit" name="delete" id="delete" value="Delete Selected Records"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
 </div>
-
-
-<?php include("footer.php");
