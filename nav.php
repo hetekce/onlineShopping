@@ -9,26 +9,26 @@ include("header.php");
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            <li class="nav-item mr-5">
                 <a class="navbar-link" href="index.php" style="color: #005cbf;  "><h1>Marselando</h1></a>
             </li>
-            <li class="nav-item ml-5">
-                <a class="nav-link" href="index.php?Bestellungen=true"><h3>Bestellungen</h3></a>
+            <li class="nav-item ml-5 mt-2 mr-3">
+                <a class="nav-link" href="index.php?Bestellungen=true"><h5>Bestellungen</h5></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href='index.php?Damen=true'><h3>Damen</h3></a>
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href='index.php?Damen=true'><h5>Damen</h5></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href='index.php?Herren=true'><h3>Herren</h3></a>
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href='index.php?Herren=true'><h5>Herren</h5></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href='index.php?Kinder=true'><h3>Kinder</h3></a>
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href='index.php?Kinder=true'><h5>Kinder</h5></a>
             </li>
 
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mt-2 mr-3">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <h3>Bekleidung</h3>
+                    <h5>Bekleidung</h5>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">T-Shirt</a>
@@ -42,9 +42,9 @@ include("header.php");
 
                 </div>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mt-2 mr-3">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <h3>Schuhe</h3>
+                    <h5>Schuhe</h5>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Sneaker</a>
