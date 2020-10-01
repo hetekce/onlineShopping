@@ -41,14 +41,14 @@ if (isset($_GET['edit'])) {
     }
 </script>
 
-<div style="height:600px;">
+<div style="min-height:1000px;">
     <div>
         <h2>Bestellungen</h2>
     </div>
 
     <div>
     <form method="post" action="connection.php">
-        <table class="benutzer">
+        <table class="table table-striped text-monospace">
             <caption>BESTELLUNGEN<br><br></caption>
             <thead>
             <th><label for="select_all_checkbox"></label><input type="checkbox" id="select_all_checkbox" onclick="toggle(this);"></th>
