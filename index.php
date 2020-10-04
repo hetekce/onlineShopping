@@ -1,6 +1,6 @@
 <?php
 
-require_once "header.php";
+//require_once "header.php"; already included in nav.php
 include("nav.php");
 
 ?>
@@ -24,6 +24,12 @@ include("nav.php");
     function Bestellbecome(){
         include ("bestelbecome.php");
     }
+    function Alle() {
+        include("alle.php");
+    }
+    if(isset($_GET['Alle'])){
+        Alle();
+    }
 
     if (isset($_GET['Damen'])) {
         Damen();
@@ -40,9 +46,10 @@ include("nav.php");
     if(isset($_GET['save'])){
         Bestellbecome();
     }
-    function Alle() {
-        include("alle.php");
+    if(isset($_GET['edit'])){
+        include 'einzelprodukt.php';
     }
+
     ?>
 </div>
 

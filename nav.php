@@ -10,7 +10,7 @@ include("header.php");
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item mr-5">
-                <a class="navbar-link" href="index.php" style="color: #005cbf;  "><h1>Marselando</h1></a>
+                <a class="navbar-link" href="index.php?Alle=true" style="color: #005cbf;  "><h1>Marselando</h1></a>
             </li>
             <li class="nav-item ml-5 mt-2 mr-3">
                 <a class="nav-link" href="index.php?Bestellungen=true"><h5>Bestellungen</h5></a>

@@ -1,7 +1,4 @@
-<?php include ('connection.php');
-require_once "header.php";
-include("nav.php");
-?>
+<?php include ('connection.php'); ?>
 
 
 <?php
@@ -95,4 +92,3 @@ if (isset($_GET['edit'])) {
 
         </div>
 </div>
-<?php include ('footer.php'); ?>
