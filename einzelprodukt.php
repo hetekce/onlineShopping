@@ -94,7 +94,7 @@ if (isset($_GET['edit'])) {
                         </div>
                         <span class="text-success">
                             <?php // hier könnte manche promotionen eingefügt werden
-                                echo "-"."&dollar;". "0";
+                                echo "-"."&euro; ". "0";
                             ?>
                         </span>
 

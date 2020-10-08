@@ -76,8 +76,8 @@ if (isset($_GET['edit'])) {
 
             $stmt->execute();
 
-            if($row = $stmt->fetch()){
-                if($row > 0){
+            if($stmt->rowCount()>0){
+                //if($row > 0){
                     while($row = $stmt->fetch()){
                         echo "<tr class='rows'>";
                         echo "<td class='user_list'><input class='user_list1' type='checkbox' name='checkbox[]' value='".$row['bestellung_ID']."'></td>";
@@ -92,11 +92,12 @@ if (isset($_GET['edit'])) {
                         echo "<td class='user_list'><a href='bestellen.php?del=".$row['bestellung_ID']."' class='btn btn-outline-danger'>Stornieren</a></td>";
                         echo "</tr>";
                     }
-                } else{
-                    echo "No records matching your query were found.";
                 }
-            } else{
-                echo "ERROR: Could not able to execute. ";
+            /*else{
+                    echo "No records matching your query were found.";
+                }}*/
+            else{
+                echo "No orders matching your account were found.";
             }
 
             ?>
