@@ -63,16 +63,43 @@ include("header.php");
             <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 BG Farbe
             </button>
+            <?php
+            function currentUrl() {
+            $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') === FALSE ? 'http' : 'https';
+            $host     = $_SERVER['HTTP_HOST'];
+            $script   = $_SERVER['SCRIPT_NAME'];
+            $params   = $_SERVER['QUERY_STRING'];
+
+            if (preg_match('/\bcolour\b/', $params)) {
+                list($p1,$p2) = explode('colour', $params);
+                $params = $p1;
+            }
+            if(strpos($params, '&' )!=false){
+                list($part1, $part2) = explode('&', $params);
+                $params = $part1;
+            }
+
+            return $protocol . '://' . $host . $script . '?' . $params;
+            }
+            ?>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="?colour=grey">Grey</a>
-                <a class="dropdown-item" href="?colour=white">White</a>
-                <a class="dropdown-item" href="?colour=pink">Pink</a>
+                <!--<a class="dropdown-item" href="<?php //echo $_SERVER['REQUEST_URI'] . '&colour=grey'; ?>">Grey</a>-->
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=pink';?>">Pink</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=pink';?>">Grey</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=white';?>">White</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=blue';?>">Blue</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=purple';?>">Purple</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=green';?>">Green</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=yellow';?>">Yellow</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=orange';?>">Orange</a>
+                <a class="dropdown-item" href="<?php echo currentUrl().'&colour=red';?>">Red</a>
+                <!--<a class="dropdown-item" href="?colour=white">White</a>
                 <a class="dropdown-item" href="?colour=blue">Blue</a>
                 <a class="dropdown-item" href="?colour=purple">Purple</a>
                 <a class="dropdown-item" href="?colour=green">Green</a>
                 <a class="dropdown-item" href="?colour=yellow">Yellow</a>
                 <a class="dropdown-item" href="?colour=orange">Orange</a>
-                <a class="dropdown-item" href="?colour=red">Red</a>
+                <a class="dropdown-item" href="?colour=red">Red</a>-->
             </div>
         </div>
         <form action="suchergebnis2.php" method="get" class="form-inline my-2 my-lg-0">
