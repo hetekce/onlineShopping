@@ -8,46 +8,28 @@ include("nav.php");
 <div class="container align-items-center" style="min-height: 500px;">
 
     <?php
-    function Damen() {
-        include("damen.php");
-    }
-    function Herren() {
 
-        include("herren.php");
-    }
-    function Kinder() {
-        include("kinder.php");
-    }
-    function Bestellungen(){
-        include("bestellen.php");
-    }
-    function Bestellbecome(){
-        include ("bestelbecome.php");
-    }
-    function Alle() {
-        include("alle.php");
-    }
     if(isset($_GET['Alle'])){
-        Alle();
+        include("alle.php");
     }
 
     if (isset($_GET['Damen'])) {
-        Damen();
+        include("damen.php");
     }
     if (isset($_GET['Herren'])) {
-        Herren();
+        include("herren.php");
     }
     if (isset($_GET['Kinder'])) {
-        Kinder();
+        include("kinder.php");
     }
     if(isset($_GET['Bestellungen'])){
-        Bestellungen();
+        include("bestellen.php");
     }
     if(isset($_GET['save'])){
-        Bestellbecome();
+        include ("bestelbecome.php");
     }
     if(isset($_GET['edit'])){
-        include 'einzelprodukt.php';
+        include ("einzelprodukt.php");
     }
 
     ?>

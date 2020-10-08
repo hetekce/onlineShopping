@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f827003e-50ec-4f72-ba1f-7e2b10cb095d" name="Default Changelist" comment="small bugs on order page are fixed">
+    <list default="true" id="f827003e-50ec-4f72-ba1f-7e2b10cb095d" name="Default Changelist" comment="background color are now static on every screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +77,8 @@
       <workItem from="1601976375305" duration="953000" />
       <workItem from="1601987481388" duration="384000" />
       <workItem from="1602074329377" duration="642000" />
-      <workItem from="1602094109388" duration="9615000" />
+      <workItem from="1602094109388" duration="9860000" />
+      <workItem from="1602156106575" duration="754000" />
     </task>
     <task id="LOCAL-00001" summary="html -php">
       <created>1601473224019</created>
@@ -176,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602148088991</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="background color are now static on every screen">
+      <created>1602153784853</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602153784853</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +218,8 @@
     <MESSAGE value="einzelprodukt has been added to the index.php, and corresponded places in related files has been changed." />
     <MESSAGE value="order screen has been redesigned." />
     <MESSAGE value="small bugs on order page are fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="small bugs on order page are fixed" />
+    <MESSAGE value="background color are now static on every screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="background color are now static on every screen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="187" key="#CLI_Interpreters" timestamp="1601386946607">
@@ -260,10 +270,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1601387135903" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602148095671">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602153792213">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602148095671" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602153792213" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1601547998258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
